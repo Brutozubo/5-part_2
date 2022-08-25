@@ -1,18 +1,20 @@
 class Model:
-    def Save(self):
-        import json
-        dict = {'title': 'Какой-то заголовок',
-                'text': 'Какой-то текст',
-                'author': 'Какой-то автор'}
-        json = json.dumps(dict)
-        f = open('dict.json', 'w')
-        f.write(json)
-        f.close()
 
-class C1():
     title = '1'
     text = '2'
     author = '3'
 
 
-print (list(filter(lambda x: not x.startwith('_'), dir(C1))))
+    def save(self):
+        print("Сохраняем атрибуты")
+
+    С1 = Model()
+
+    list = filter(lambda x: not x.startswith('_'), dir (C1))
+    print(list)
+
+    import json
+    json = json.dumps(dict)
+        f = open('dict.json', 'w')
+        f.write(json)
+        f.close()
